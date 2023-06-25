@@ -33,6 +33,9 @@
         background-color: colors.$COLOR_PURPLE_BLUE;
     }
 
+    .input-field {
+        background-color: colors.$COLOR_WHITE_20;
+    }
 }
 
 .theme-dark {
@@ -65,7 +68,7 @@
         background-color: colors.$COLOR_DARK_PURPLE_BLUE;
     }
 
-    .container-window-card, .container-search-history-card {
+    .input-field, .container-window-card, .container-search-history-card {
         background-color: colors.$COLOR_DARK_BLUE_30;
     }
     .container-history {
