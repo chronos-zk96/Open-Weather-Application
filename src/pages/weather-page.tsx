@@ -27,6 +27,9 @@ const WeatherPage = () => {
   ): Promise<void> => {
     e.preventDefault();
 
+    // Stop searching for empty value
+    if (filterText.trim() === "") return;
+
     try {
       setAlertMessage(""); // reset error message
       await onSearchWeather(filterText);
