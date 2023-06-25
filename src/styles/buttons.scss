@@ -1,0 +1,23 @@
+@use './colors.scss' as colors;
+
+.base-button-search {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+    fill: colors.$COLOR_WHITE;
+    stroke: colors.$COLOR_WHITE;
+}
+
+.button-circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.base-button-search:hover, .button-circle:hover {
+    cursor: pointer;
+}

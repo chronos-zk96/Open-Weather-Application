@@ -1,0 +1,105 @@
+@use "./colors.scss" as colors;
+
+$PADDING_XS: 20px;
+$PADDING_S: 50px;
+$PADDING_M: 70px;
+$PADDING_L: 100px;
+$PADDING_XL: 200px;
+
+.no-margin {
+  margin: 0;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-space-between {
+  @extend .flex-row;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 3rem);
+}
+
+.container-window-card {
+  background-color: colors.$COLOR_WHITE_20;
+  border: colors.$COLOR_WHITE;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 30px 30px 0 30px;
+  margin-top: 100px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-search-history-card {
+  background-color: colors.$COLOR_WHITE_20;
+  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px 20px 0 20px;
+  flex: 1;
+}
+
+.container-history {
+  height: 20px;
+  background-color: colors.$COLOR_WHITE_40;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.container-weather-infographic {
+  margin-bottom: 1rem;
+  padding: 0 10px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+  .container {
+    padding-right: $PADDING_S;
+    padding-left: $PADDING_S;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-right: $PADDING_XS;
+    padding-left: $PADDING_XS;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+
+  .container-window-card {
+    margin-top: 80px;
+  }
+}
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { }

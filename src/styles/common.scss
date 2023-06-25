@@ -1,0 +1,16 @@
+@use './colors.scss' as colors;
+
+.text-danger {
+    color: colors.$COLOR_TEXT_DANGER;
+}
+
+.bg-danger {
+    background-color: colors.$COLOR_BG_DANGER;
+}
+
+.alert-danger {
+    @extend .text-danger;
+    @extend .bg-danger;
+    padding: 10px;
+    border-radius: 5px;
+}
