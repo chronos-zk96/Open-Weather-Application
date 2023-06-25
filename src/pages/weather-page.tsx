@@ -56,7 +56,7 @@ const WeatherPage = () => {
       appid: import.meta.env.VITE_API_KEY,
     });
     if (infoRes.length === 0) {
-      return setAlertMessage(`No result found for ${searchedLocation}.`);
+      return setAlertMessage(`No result found for ${searchedLocation}`);
     }
 
     // get the weather

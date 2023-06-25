@@ -35,7 +35,11 @@ const SearchBar = ({
           placeholder="Country"
           onChange={(e) => onFilterChange(e)}
         />
-        <button type="submit" className="button-search">
+        <button
+          type="submit"
+          className="button-search"
+          style={{ padding: "8px" }}
+        >
           <SearchIcon />
         </button>
       </form>

@@ -15,12 +15,10 @@
         color: colors.$COLOR_MUTED_GREY;
     }
     .text-current-temparature {
-        @extend %base-text-current-temparature;
         color: colors.$COLOR_PURPLE_BLUE;
     }
 
     .header {
-        @extend .base-header;
         background-color: colors.$COLOR_WHITE_20;
         .title {
             @extend %base-title;
@@ -29,7 +27,6 @@
     }
 
     .button-search {
-        @extend .base-button-search;
         background-color: colors.$COLOR_PURPLE_BLUE;
     }
 
@@ -42,10 +39,6 @@
     background-image: url("../assets/bg-dark.png");
     min-height: 100vh;
 
-    .text-current-temparature{
-        @extend %base-text-current-temparature;
-    }
-
     .text, .text-weather-info, .text-current-temparature {
         color: colors.$COLOR_WHITE;
     }
@@ -55,7 +48,6 @@
     }
 
     .header {
-        @extend .base-header;
         background-color: colors.$COLOR_DARK_BLUE_30;
         .title {
             @extend %base-title;
@@ -64,8 +56,12 @@
     }
     
     .button-search {
-        @extend .base-button-search;
         background-color: colors.$COLOR_DARK_PURPLE_BLUE;
+    }
+    .button-circle {
+        background-color: colors.$COLOR_TRANSPARENT;
+        fill: colors.$COLOR_MUTED_GREY;
+        border: 2px solid colors.$COLOR_MUTED_GREY;
     }
 
     .input-field, .container-window-card, .container-search-history-card {

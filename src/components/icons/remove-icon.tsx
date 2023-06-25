@@ -1,28 +1,5 @@
 export const RemoveIcon = () => {
   return (
-    <svg
-      viewBox="0 0 16 16"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
-      <rect width="16" height="16" fill="url(#pattern0)" fillOpacity="0.5" />
-      <defs>
-        <pattern
-          id="pattern0"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-          height="1"
-        >
-          <use xlinkHref="#image0_2_50" transform="scale(0.0104167)" />
-        </pattern>
-        <image
-          id="image0_2_50"
-          width="96"
-          height="96"
-          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACyUlEQVR4nO2cO4xNURiFVyQokUgQEQlKovOoiETh0QjReVVEh84rCkKFktGhEaJDVESH0qMRdCY6j0IGM0v+5LRTjLv3Pus/s77k6+d8+94zM3fWHMAYY4wxxhhjtLgAgCN6pe+LmM3x6UPoPz59CP3H55AOoVYcDkQfAHwAvb8K6XdA/yHoW1D/MdiD/h4AH0Dvr0L6HdB/CA71FmSMMcYYY4wxwRmBX4DY2NNKR39QIAgbewBCbBUIwsZugRCrBYKwsasgxDwAkwJR2MjJ7pqlGBcIw0Z+gSCvBMKwkS8hyAOBMGzkfQhyTSAMG3kVgpwUCMNGnoAg+wTCsJF7IchGgTBs5AYIskwgDBu5FILMATAhEIeVneiuVZJPAoFY2Y8Q5rlAIFb2GYS5IxCIlb0NYS4JBGJlL0KYYwKBWNmjEGaXQCBWdieEWScQiJVdC2EWCgRiZRdAnO8CkVjJH0jAO4FQrOQbJOCJQChW8jESMCYQipW8gQScEwjFSsYCUJ5DAqFYyVgAyrNNIBQrGQtAedYIhGIlYwEoz3wAUwKxWNip7tpS8FUgGAsby780vBYIxsLG8i8NDwWCsbCx/EvDdYFgLGws/9JwSiAYCxvLvzTsFwjGwsbyLw2bBIKxsLH8S8NygWAsbCz/0hDLsd8C0Tgb1nDT8VkgHAsZi790vBAIx0LG4i8ddwXCsZCx+EvHZYFwLGQs/tJxXCAcCxmLv3TsFgjHQsbiLx3rBcKxkLH4S8cigXAsZCz+UvJTIB5nwxpuOt4LBOSIvkVingoE5IjG0i8ttwQCckRvIjHnBQJyRM8iMUN4fMEeJGYJgD8CETnCx9CLkZx7AiH5n8YHiulZ2f0szWR+A7ACA2E7gF8CUTmDW88ODIzN3XMWKO6HbH+AnwnxqMcj3b/6jIs86vJv97U8AnAYwNy+IxljjDHGGGMwaP4BXfoeJZvYrY0AAAAASUVORK5CYII="
-        />
-      </defs>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M 10.806641 2 C 10.289641 2 9.7956875 2.2043125 9.4296875 2.5703125 L 9 3 L 4 3 A 1.0001 1.0001 0 1 0 4 5 L 20 5 A 1.0001 1.0001 0 1 0 20 3 L 15 3 L 14.570312 2.5703125 C 14.205312 2.2043125 13.710359 2 13.193359 2 L 10.806641 2 z M 4.3652344 7 L 5.8925781 20.263672 C 6.0245781 21.253672 6.877 22 7.875 22 L 16.123047 22 C 17.121047 22 17.974422 21.254859 18.107422 20.255859 L 19.634766 7 L 4.3652344 7 z"/></svg>
   );
 };
