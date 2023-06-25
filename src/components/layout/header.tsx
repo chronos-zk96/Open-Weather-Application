@@ -5,7 +5,7 @@ import "../../styles/theme-variables.scss";
 export const Header = () => {
   return (
     <header className="header">
-      <span className="title">Open Weather Application</span>
+      <span className="title">OpenWeather Application</span>
       <ToggleThemeButton />
     </header>
   );
