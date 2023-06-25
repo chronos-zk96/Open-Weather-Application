@@ -30,7 +30,7 @@ const SearchBar = ({
       >
         <input
           type="text"
-          className="input-field"
+          className="input-field text"
           value={filterText}
           placeholder="Country"
           onChange={(e) => onFilterChange(e)}
