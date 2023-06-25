@@ -20,4 +20,5 @@
 
 .base-button-search:hover, .button-circle:hover {
     cursor: pointer;
+    box-shadow: 0 0 10px colors.$COLOR_WHITE;
 }
