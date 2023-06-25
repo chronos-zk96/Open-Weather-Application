@@ -1,0 +1,15 @@
+.image-sun {
+    height: 250px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10px, -80px);
+}
+
+@media (max-width: 575px) {
+    .image-sun {
+      height: 150px;
+      transform: translate(-10px, -60px);
+    }
+  }

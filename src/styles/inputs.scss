@@ -1,0 +1,15 @@
+@use './colors.scss' as colors;
+
+.input-field {
+    height: 40px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.input-field:focus {
+    outline: none;
+    border: 1px solid colors.$COLOR_TURQUOISE_BLUE;
+}

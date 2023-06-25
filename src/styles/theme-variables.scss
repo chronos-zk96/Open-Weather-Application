@@ -1,0 +1,74 @@
+@use './colors.scss' as colors;
+@import './headers.scss';
+@import './buttons.scss';
+@import './utils.scss';
+@import './text.scss';
+
+.theme-light {
+    background-image: url("../assets/bg-light.png");
+    min-height: 100vh;
+
+    .text {
+        color: colors.$COLOR_BLACK;
+    }
+    .text-weather-info {
+        color: colors.$COLOR_MUTED_GREY;
+    }
+    .text-current-temparature {
+        @extend %base-text-current-temparature;
+        color: colors.$COLOR_PURPLE_BLUE;
+    }
+
+    .header {
+        @extend .base-header;
+        background-color: colors.$COLOR_WHITE_20;
+        .title {
+            @extend %base-title;
+            color: colors.$COLOR_DARK_GREY;
+        }
+    }
+
+    .button-search {
+        @extend .base-button-search;
+        background-color: colors.$COLOR_PURPLE_BLUE;
+    }
+
+}
+
+.theme-dark {
+    background-image: url("../assets/bg-dark.png");
+    min-height: 100vh;
+
+    .text-current-temparature{
+        @extend %base-text-current-temparature;
+    }
+
+    .text, .text-weather-info, .text-current-temparature {
+        color: colors.$COLOR_WHITE;
+    }
+
+    .text-history-info {
+        color: colors.$COLOR_WHITE_50;
+    }
+
+    .header {
+        @extend .base-header;
+        background-color: colors.$COLOR_DARK_BLUE_30;
+        .title {
+            @extend %base-title;
+            color: colors.$COLOR_WHITE;
+        }
+    }
+    
+    .button-search {
+        @extend .base-button-search;
+        background-color: colors.$COLOR_DARK_PURPLE_BLUE;
+    }
+
+    .container-window-card, .container-search-history-card {
+        background-color: colors.$COLOR_DARK_BLUE_30;
+    }
+    .container-history {
+        background-color: colors.$COLOR_DARK_BLUE_50;
+    }
+}
