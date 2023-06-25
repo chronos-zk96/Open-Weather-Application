@@ -11,7 +11,7 @@ const ToggleThemeButton = () => {
   };
 
   return (
-    <button className="button-circle" onClick={toggleTheme}>
+    <button className="button-theme" onClick={toggleTheme}>
       {theme === "dark" ? <DayModeIcon /> : <NightModeIcon />}
     </button>
   );

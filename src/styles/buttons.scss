@@ -1,6 +1,6 @@
 @use './colors.scss' as colors;
 
-.base-button-search {
+.button-search {
     height: 40px;
     width: 40px;
     border: none;
@@ -9,7 +9,7 @@
     stroke: colors.$COLOR_WHITE;
 }
 
-.button-circle {
+%base-button-circle {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -18,7 +18,17 @@
     padding-top: 5px;
 }
 
-.base-button-search:hover, .button-circle:hover {
+.button-circle {
+    @extend %base-button-circle;
+}
+
+.button-theme {
+    @extend %base-button-circle;
+}
+
+.button-search:hover, .button-circle:hover, .button-theme:hover {
     cursor: pointer;
     box-shadow: 0 0 10px colors.$COLOR_WHITE;
 }
+
+
